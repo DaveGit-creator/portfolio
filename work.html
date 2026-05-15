@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Dave Truideman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Dave<span>.</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html" class="active">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero reveal" style="padding: 6rem 0;">
+            <div class="hero-content">
+                <p class="overline">My Portfolio</p>
+                <h1>Selected <span class="highlight">Projects</span>.</h1>
+                <p class="intro">A collection of web applications and tools I've built, focusing on clean code and user experience.</p>
+            </div>
+        </section>
+
+        <section class="projects-grid reveal">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Engine</h3>
+                    <p>A full-stack e-commerce web application designed to simulate a real online shopping experience with secure transactions and inventory control.</p>
+                    <p style="margin-top: 1rem;"><strong>Overview:</strong> This project demonstrates a complete online store system where users can browse products, manage a shopping cart, and complete purchases while the system tracks inventory in real time.</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>User registration and login system</li>
+                            <li>Product listing with search and filtering</li>
+                            <li>Shopping cart functionality</li>
+                            <li>Secure checkout process</li>
+                            <li>Real-time inventory management</li>
+                            <li>Responsive design for mobile and desktop</li>
+                        </ul>
+                    </div>
+                    <p style="font-size: 0.8rem; margin: 1.5rem 0 0.5rem; color: var(--primary-color); font-weight: 600;">React • Node.js • MySQL</p>
+                    <div class="project-links">
+                        <a href="#" class="btn" style="margin-top: 0; font-size: 0.85rem;"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn" style="margin-top: 0; font-size: 0.85rem; background: transparent; border: 1px solid var(--primary-color);">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="project-info">
+                    <h3>Task Management Dashboard</h3>
+                    <p>A productivity and project management tool built to help users organize tasks, track progress, and manage workflows efficiently.</p>
+                    <p style="margin-top: 1rem;"><strong>Overview:</strong> This application allows users or teams to create tasks, organize them into categories, and track progress visually through a clean dashboard interface.</p>
+                    <div style="margin-top: 1rem;">
+                        <strong>Key Features:</strong>
+                        <ul>
+                            <li>Create, update, and delete tasks</li>
+                            <li>Drag-and-drop task organization</li>
+                            <li>Progress tracking system</li>
+                            <li>Task categorization and prioritization</li>
+                            <li>Clean and responsive UI design</li>
+                        </ul>
+                    </div>
+                    <p style="font-size: 0.8rem; margin: 1.5rem 0 0.5rem; color: var(--primary-color); font-weight: 600;">JavaScript • HTML5 • CSS3</p>
+                    <div class="project-links">
+                        <a href="#" class="btn" style="margin-top: 0; font-size: 0.85rem;"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="btn" style="margin-top: 0; font-size: 0.85rem; background: transparent; border: 1px solid var(--primary-color);">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dave Truideman. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

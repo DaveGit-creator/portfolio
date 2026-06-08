@@ -16,6 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    if (sections.length && navLinks.length) {
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const id = entry.target.id;
+                const navLink = document.querySelector(`nav a[href="#${id}"]`);
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    if (navLink) navLink.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.45
+        });
+
+        sections.forEach(section => navObserver.observe(section));
+    }
+
     // Typing Effect Logic
     const typedTextSpan = document.querySelector(".typed-text");
     if (typedTextSpan) {
@@ -67,6 +86,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 formStatus.className = 'form-status success';
                 contactForm.reset();
             }, 1500);
+        });
+    }
+
+    // Back to Top Button Logic
+    const backToTopBtn = document.getElementById('backToTop');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
 });

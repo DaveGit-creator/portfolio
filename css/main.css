@@ -154,6 +154,21 @@ nav a.active {
     padding: 6rem 0 4rem;
 }
 
+.about-portrait {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.about-portrait img {
+    width: min(100%, 280px);
+    max-width: 100%;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: var(--card-shadow);
+    display: block;
+}
+
 .overline {
     display: inline-flex;
     text-transform: uppercase;
@@ -266,7 +281,8 @@ nav a.active {
 /* Education header with logo */
 .education-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -302,15 +318,11 @@ nav a.active {
 .image-row {
     grid-column: 1 / -1;
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 3rem;
-    overflow-x: auto;
     padding: 1rem 0 2rem;
-    scrollbar-width: none;
-}
-
-.image-row::-webkit-scrollbar {
-    display: none;
+    justify-content: center;
 }
 
 .full-visible-img {
